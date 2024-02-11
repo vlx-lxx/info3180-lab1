@@ -7,10 +7,14 @@ app = Flask(__name__)
 # Put your routes below this comment
 '''
 
+# Define the route and created associated view function for home page which returns the string 'My home page'
+
 
 @app.route('/')
 def home():
     return 'My home page'
+
+# Defined the route and created associated view function for the About page
 
 
 @app.route('/about')
