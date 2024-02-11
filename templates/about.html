@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <!-- Loaded the app.css stylesheet using the url_for() -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
     <title>My Website - About</title>
 </head>
 
 <body>
     <h1>Javon Laing</h1>
+    <!-- Image loaded using the url_for() function in an <img /> tag  -->
+    <img src="{{ url_for('static', filename='javon_photo.jpeg') }}" alt="Photo of Javon">
     <p>
         I'm someone who finds fascination in both the realm of technology and the complexities of international
         relations. Whether I'm diving into the latest gadgets or delving into global affairs, my curiosity knows no
